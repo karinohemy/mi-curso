@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            background-color: #444;
+            color: #eee;
+            font-family: sans-serif;
+        }
+        code{
+            font-family: consolas;
+            color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Tablas</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Filas y Columnas</h2>
+            <p>Las tablas de colocan dentro de una etiqueta <code>table</code></p>
+            <p>Las tablas tienen 3 partes</p>
+            <ul>
+                <li><code>thead</code>:Cabecera</li>
+                <li><code>tbody</code>:Cuerpo</li>
+                <li><code>tfoot</code>:Pie de tabla</li>
+            </ul>
+        </section>
+        <hr />
+        <section>
+            <h2>Tabla simple</h2>
+            <p>Para combinar filas se usa el atributo <code>colspan</code></p>
+            <table border="1">
+                <thead> <!--filas, como min 1columna-->
+                    <tr>
+                        <th>Cantidad</td>
+                        <th>Descripción</th>
+                        <th>P. unitario</th>
+                        <th>P. total</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>2</td>
+                        <td>Teclados mecánicos Fanatic v.</td>
+                        <td>S/200.00</td>
+                        <td>S/400.00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Monitor widescreen sansumg</td>
+                        <td>S/180.00</td>
+                        <td>S/180.00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Mouse Hyperx</td>
+                        <td>S/200.00</td>
+                        <td>S/200.00</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3" align="center">TOTAL</td>
+                        <td>S/780.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <hr />
+        <section>
+            <h2>Combinando filas</h2>
+            <p>Para combinar filas se usa el atributo <code>rowspan</code></p>
+            <table border="1">
+                <thead>
+                    <tr> <!--tr>th*2-->
+                        <th>Categoria</th>
+                        <th>Etiquetas</th>
+                    </tr>
+                </thead>
+                <tbody> <!--tr*16>td{izquierda}+td{derecha$}tengo 16tr y cada fila tendra 2td
+                            un td que va a tener un texto a la izquierda+td sera hermano de derecha-->
+                    <tr>
+                        <td rowspan="5">izquierda</td>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="5">izquierda</td>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="6">izquierda</td>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+
+        <section>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td rowspan="5">Supermercados "LA VENDERORA"</td>
+                        <td></td>
+                        <td>25/04/2011</td>
+                    </tr>
+                    <tr>
+                        
+                        <td colspan="2">N Fra 25611</td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td>Cliente</td>
+                        <td rowspan="3">
+                            Juan Francisco R. <br />
+                            1804562738 <br />
+                            Ambato, Av.cevallos
+
+                        </td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Ruc</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Dirección</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+
+
+    </main>
+</body>
+</html>

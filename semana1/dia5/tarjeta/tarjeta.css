@@ -1,0 +1,18 @@
+body{
+    background-image: url("https://i.pinimg.com/564x/fa/7b/6d/fa7b6d08e45a25a097c56dcd9267d4ca.jpg");
+    font-size: 20px;
+    margin: 40px;
+}
+
+.cartilla{
+    border: solid 3px rgb(142, 233, 162);
+    width: 500px;
+    height: 600px;
+    text-align: center;
+    margin: auto;
+}
+.photo{
+    border-radius: 190px;
+    margin: 20px;
+    padding: 10px;
+}
