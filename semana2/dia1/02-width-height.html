@@ -10,20 +10,51 @@
             margin: 0;
             padding: 0;
         }
-        .caja-1{
+        body {
+            background-color: #cccccc;
+            border: 5px solid peru;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .caja-1 {
             border: 1px solid red;
             width: 200px;
+            height: 100px;
+            /* overflow: hidden; */
+            overflow-y: scroll; /*significa que si existe un revalse esta propiedad atribuye
+            una caja para visualizar mas abajo*/
+
         }
-        .span-1{
+        .span-1 {
             border: 1px solid blue;
             width: 200px; /* esto no va a funcionar pq a un elemento en linea no se les puede espicificar los
             anchos ni altos*/
+            height: 100px;
+        }
+        .caja-2 {
+            border: 1px solid white;
+            height: 100px;
+            width: 200px;
+            overflow-x: scroll;
+        }
+        .parrafo-grande{
+            width: 300px;
         }
 
     </style>
 </head>
 <body>
-    <div class="caja-1">algo de contenido uwu</div>
+    <div class="caja-1">algo de contenido uwu Lorem ipsum dolor sit amet         consectetur adipisicing elit. 
+        Blanditiis porro fugit ullam, explicabo laboriosam voluptate veritatis culpa saepe eveniet corrupti 
+        consectetur aliquid ad laborum quibusdam delectus? Amet porro unde vero!
+    </div>
     <span class="span-1">un span</span>
+    <div class="caja-2">
+        <p class="parrafo-frande"> <!--alt +z para poner bien el lorem-->
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum eveniet itaque aliquid. Beatae quo ducimus reiciendis minus fuga, quidem accusantium labore consequuntur aspernatur id impedit iure sunt eos sit libero.
+        </p>
+
+    </div>
 </body>
 </html>
