@@ -1,0 +1,19 @@
+* {
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0px;
+}
+.roja{
+    width: 240px;
+    border: 1px solid red;
+    height: 200px;
+    
+}
+
+.lila {
+    width: 100px;
+    border: 1px solid rgb(183, 66, 238);
+    height: 100px;
+    
+
+}
